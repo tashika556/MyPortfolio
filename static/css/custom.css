@@ -374,15 +374,13 @@ footer .f-social li {
   display: inline-block;
   margin-right: 29px;
 }
-footer .f-social li .fa-facebook {
+footer .f-social li .fa-facebook , footer .f-social li .fa-linkedin {
   color: #4267b2;
 }
 footer .f-social li .fa-instagram {
   color: #e1306c;
 }
-footer .f-social li .fa-youtube-play {
-  color: red;
-}
+
 footer .f-social li a {
   font-size: 36px;
 }
@@ -518,4 +516,36 @@ i.fa.fa-twitter {
   height: 89%;
   border-left: 6px solid #03aff1;
 
+}
+
+
+.skills_item .skills-image img{
+  height:110px;
+  width:130px;
+}
+.education-item::before , .education-item2::before{
+  content: "";
+  position: absolute;
+  left: 13%;
+  width: 100%;
+  height: 100%;
+
+ border-left:2px solid white;
+margin-bottom:10px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  bottom: -10px;
+}
+.education-item::after , .education-item2::after{
+  content: "";
+  position: absolute;
+  left: 12.7%;
+  width: 10px;
+  height: 10px;
+  background-color: #03aff1;
+ border:2px solid #03aff1;;
+ border-radius:50%;
+bottom:0px;
+
+  z-index: 0;
 }

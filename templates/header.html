@@ -6,6 +6,7 @@
     <title>Tashika Singh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="icon" href="{{ url_for('static', filename='img/fav.png') }}">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/slick-theme.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}" />
@@ -57,7 +58,7 @@
         <div class="header">
             <nav class="navbar flex">
                 <div class="logo_top">
-                    <a href="index.php" class="navbar-logo"><img src="img/logo.png" class="w-80" alt="">
+                    <a href="index.php" class="navbar-logo"><img src="{{ url_for('static', filename='img/logo.png') }}" class="w-80" alt="">
                     </a>
                 </div>
                 <ul class="navbar-links  w-full  items-center flex justify-center">
@@ -83,7 +84,7 @@
                         <li class="navbar-dropdown relative pr-10">
                             <a class="text-white uppercase font-bold text-sm bg-blue-300 p-4 rounded-lg" href="files/Tashika-Singh-CV.pdf" download>Download CV</a>
                         </li>
-                        <li class="navbar-dropdown relative pr-10">
+                        <li class="navbar-dropdown relative pr-1">
                             <a class="text-white uppercase font-bold text-sm bg-blue-600 p-4 rounded-lg" href="files/Tashika-Singh-CV.pdf">View CV</a>
                         </li>
                     </div>

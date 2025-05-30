@@ -1,17 +1,29 @@
 //type writer
 
-const originalText = document.getElementById("typewriterContent").innerText;
-let index = 0;
+  const originalText = document.getElementById("typewriterContent").innerText.trim();
+  let index = 0;
+  let isDeleting = false;
 
-function typeWriter() {
-  if (index < originalText.length) {
-    document.getElementById("typewriterContent").innerHTML = originalText.substring(0, index + 1);
-    index++;
-    setTimeout(typeWriter, 100);
+  function typeWriter() {
+    const contentElement = document.getElementById("typewriterContent");
+
+    if (!isDeleting && index <= originalText.length) {
+      contentElement.innerHTML = originalText.substring(0, index);
+      index++;
+      setTimeout(typeWriter, 100);
+    } else if (isDeleting && index >= 0) {
+      contentElement.innerHTML = originalText.substring(0, index);
+      index--;
+      setTimeout(typeWriter, 50);
+    } else {
+      isDeleting = !isDeleting;
+      setTimeout(typeWriter, 1000); 
+    }
   }
-}
 
-typeWriter();
+  typeWriter();
+
+
 
 
 //menu side menu
@@ -35,3 +47,34 @@ $(document).ready(function () {
   });
 });
 
+$(".skills-slider").slick({
+  dots: true,
+  arrow: false,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  slidesToShow: 6,
+  responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 556,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
