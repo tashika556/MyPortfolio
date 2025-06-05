@@ -5,7 +5,7 @@
         <div class="grid lg:grid-cols-2 lg:gap-3 lg:gap-y-4">
             <div class="col-span-1">
                 <div class="slider_wrap">
-
+ <img src="{{ url_for('static', filename='img/Tashika-picture.jpg') }}" alt="" class="rounded-full">
                     <h5 class="text-gray-300">Hi ! , My <b>Name</b> is</h5>
                     <h1 class="uppercase text-white" id="typewriterContent">
                         Tashika <br> Singh</span> </h1>
@@ -16,6 +16,7 @@
             <div class="col-span-1">
                 <div class="image-slider relative">
                     <img src="{{ url_for('static', filename='img/laptop.png') }}" alt="" class="slider-image">
+                    
                 </div>
             </div>
         </div>
@@ -104,5 +105,57 @@
               
             </div>
      
+        </section>
+
+         <section class="relative section_main bg-blue">
+        <div class="mx-auto max-w-7xl lg:px-5 md:px-8 px-5 pt-4 mt-4 mb-10">
+            <div class="grid lg:grid-cols-2">
+                <div class="col-span-1">
+                    <div class="section-title relative">
+                        <h2 class="font-playfair text-white">Experience</h2>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="grid md:grid-cols-2 mx-auto text-center mb-20 gap-5 px-4">
+          <div class="col-span-1">
+            
+                    <div class="experience-item border-2
+border-solid border-gray-500 rounded-lg text-center relative">
+                   <h3 class="text-white">Web Developer Intern</h3>
+                          <p class="text-white italic">Digisoft Developers Pvt. Ltd.</p>
+                           <p class="text-white italic bold">Lalitpur, Nepal</p>
+              <p class="text-white">August 2022 - December 2022</p>
+              <hr>
+              <h4 class="text-white">Roles and Responsibilities</h4>
+              <ul class="text-white">
+                 <li>Assisted in developing websites under the guidance of senior developers.</li>
+  <li>Developed an online Sifaris system using Laravel, incorporating user roles and CRUD functionality.</li>
+  <li>Supported content updates and minor bug fixes on client websites as requested by senior team members.</li>
+  <li>Collaborated with senior developers to understand client requirements and propose technical solutions.</li>
+              </ul>
+                </div>
+            </div>
+
+                <div class="col-span-1">
+
+                    <div class="experience-item border-2
+border-solid border-gray-500 rounded-lg text-center relative">
+ <h3 class="text-white">Web Developer</h3>
+ <p class="text-white italic">Digisoft Developers Pvt. Ltd.</p>
+<p class="text-white italic bold">Lalitpur, Nepal</p>
+ <p class="text-white">April 2023 - November 2024</p>
+ <hr>
+         <h4 class="text-white">Roles and Responsibilities</h4>
+         <ul class="text-white"><li>Convert HTML/CSS sites into dynamic WordPress and Laravel projects.
+<li>Deploy websites using cPanel and managing databases.</li>
+<li>Occasionally design entire websites independently.</li>
+<li>Update website content as per client requests.</li>
+<li>Interact with clients to address their needs and requirements.</li>
+<li>Utilize Adobe Photoshop or Figma for designing social media posts and other graphics.</li></ul>
+                </div>
+              
+            </div>
+           </div>
         </section>
 {% include 'footer.html' %}
