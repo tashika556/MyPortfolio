@@ -4,7 +4,7 @@
     <div class="mx-auto max-w-7xl lg:px-0 md:px-8 px-5 relative">
         <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-11 gap-6 md:pb-11">
             <div class="col-span-1 pr-10">
-                <a href="index.php" class="navbar-logo"><img src="{{ url_for('static', filename='img/logo.png') }}" class="w-80 mb-4  rounded-lg" alt="">
+                <a href="{{ url_for('home') }}" class="navbar-logo"><img src="{{ url_for('static', filename='img/logo.png') }}" class="w-80 mb-4  rounded-lg" alt="">
                 </a>
 
             </div>
@@ -15,9 +15,9 @@
                     <h5>Social Links</h5>
                 </div>
                 <ul class="f-social">
-                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/tashika.singh.1428" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/heyitshika_" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/tashika-singh-b84207178/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                
                 </ul>
 
@@ -39,7 +39,7 @@
         </div>
         <div class="grid grid-cols-1 py-3 footer_bg rounded-tr-lg rounded-tl-lg">
             <div class="col-span-1 text-center">
-                <p class="font-normal">2024 Tashika | All rights reserved. || Website by <a href="index.php" target="_blank"><strong class="text-white font-normal">Tashika Singh</strong>
+                <p class="font-normal">2024 Tashika | All rights reserved. || Website by <a href="{{ url_for('home') }}" target="_blank"><strong class="text-white font-normal">Tashika Singh</strong>
                     </a> </p>
             </div>
         </div>
@@ -55,14 +55,14 @@
         </div>
     </header>
     <div class="menu_mobile pt-3">
-        <div class="item"><a href="index.php"> Home </a></div>
-        <div class="item"><a href="index.php"> Skills </a></div>
-        <div class="item"><a href="index.php"> Education </a></div>
-        <div class="item"><a href="index.php"> Work Experience</a></div>
-        <div class="item"><a href="index.php"> Training </a></div>
-        <div class="item"><a href="index.php">Contact</a></div>
-        <div class="item"><a href="index.php" class=" bg-blue-300 p-4 rounded-lg">Download CV</a></div>
-       
+        <div class="item"><a href="{{ url_for('home') }}"> Home </a></div>
+        <div class="item"><a href="{{ url_for('home') }}#skills"> Skills </a></div>
+        <div class="item"><a href="{{ url_for('home') }}#education"> Education </a></div>
+        <div class="item"><a href="{{ url_for('home') }}#experience"> Work Experience</a></div>
+        <div class="item"><a href="{{ url_for('home') }}#portfolio"> Portfolios </a></div>
+        <div class="item"><a href="{{ url_for('home') }}#certificate">Certificates</a></div>
+        <div class="item"><a href="{{ url_for('static', filename='resume/TashikaSinghresume.pdf') }}" download class=" bg-blue-300 p-4 rounded-lg">Download CV</a></div>
+        <div class="item"><a href="{{ url_for('static', filename='resume/TashikaSinghresume.pdf') }}" target="_blank" class=" bg-blue-700 p-4 mt-4 rounded-lg">View CV</a></div>
     </div>
 </div>
 <!-- mobile menu end  -->
