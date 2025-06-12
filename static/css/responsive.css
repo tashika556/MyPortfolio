@@ -3,6 +3,20 @@
       overflow: hidden;
     }
   }
+ @media (min-width:1400px) and (max-width:990px){
+  li.navbar-dropdown.relative, li.navbar-dropdown.relative a {
+    font-size:10px;
+    
+}
+li.navbar-dropdown.relative{
+    padding:8px
+}}
+ @media (min-width:400px) and (max-width:900px){
+
+.education-item::after , .education-item2::after{
+
+  left: 12.4;
+}}
   @media (max-width: 400px) {
   .education-item::before , .education-item2::before{
  
