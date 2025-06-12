@@ -87,11 +87,37 @@ $(".skills-slider").slick({
     modal.classList.remove("hidden");
   }
 
-  // Close modal when clicking outside the image
+
   document.getElementById("imageModal").addEventListener("click", function (e) {
     if (e.target === this) {
       this.classList.add("hidden");
       document.getElementById("modalImage").src = "";
     }
   });
+
+
+
+window.addEventListener('load', function () {
+    const loaderWrap = document.querySelector('.loader-wrap');
+    document.body.classList.remove('loading'); // allow scroll again
+
+    if (loaderWrap) {
+        loaderWrap.classList.add('hide');
+        setTimeout(() => {
+            loaderWrap.style.display = 'none';
+        }, 1000);
+    }
+});
+
+document.querySelector('.preloader-close').addEventListener('click', function () {
+    const loaderWrap = document.querySelector('.loader-wrap');
+    document.body.classList.remove('loading'); // allow scroll again
+
+    loaderWrap.classList.add('hide');
+    setTimeout(() => {
+        loaderWrap.style.display = 'none';
+    }, 1000);
+});
+
+
 

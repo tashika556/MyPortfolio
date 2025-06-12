@@ -553,11 +553,61 @@ bottom:0px;
 clip-path: polygon(2% 0, 98% 0, 100% 6%, 100% 93%, 99% 100%, 2% 100%, 0 95%, 0 6%);
 
 }
-.loader-wrap.loader-wrap.loaded {
-    opacity: 0;
+
+.loader-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* black background */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     transition: opacity 1s ease;
-    pointer-events: none;
 }
+
+.loader-wrap.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #ff4081;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.txt-loading {
+    display: flex;
+    gap: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.preloader-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
 
 .img-block img{
   transition: transform .2s;
@@ -565,4 +615,7 @@ clip-path: polygon(2% 0, 98% 0, 100% 6%, 100% 93%, 99% 100%, 2% 100%, 0 95%, 0 6
 }
 .img-block img:hover{
  transform: scale(1.1);
+}
+body.loading {
+    overflow: hidden;
 }
