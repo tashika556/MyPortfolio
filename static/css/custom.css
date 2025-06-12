@@ -378,7 +378,9 @@ footer .f-social li .fa-facebook , footer .f-social li .fa-linkedin {
 footer .f-social li .fa-instagram {
   color: #e1306c;
 }
-
+footer .f-social li .fa-github {
+  color: #7439f4;
+}
 footer .f-social li a {
   font-size: 36px;
 }
