@@ -3,6 +3,15 @@
       overflow: hidden;
     }
   }
+  @media (max-width: 400px) {
+  .education-item::before , .education-item2::before{
+ 
+  bottom: -49px;
+}
+.education-item::after , .education-item2::after{
+  bottom: -41px;
+  left: 11.7%;
+}}
   @media (max-width: 1300px) {
     .slider_main-img img {
       height: unset;
