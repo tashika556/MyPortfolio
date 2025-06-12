@@ -78,3 +78,5 @@ $(".skills-slider").slick({
     },
   ],
 });
+
+ 
