@@ -182,7 +182,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/portfolio/hydro_map.png') }}" alt="">
+                <img onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/portfolio/hydro_map.png') }}" alt="">
                </div>
                  
                 </div>
@@ -193,7 +193,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/portfolio/carrental.png') }}" alt="">
+                <img onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/portfolio/carrental.png') }}" alt="">
                </div>
                  
                 </div>
@@ -204,7 +204,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/portfolio/dynamic.png') }}" alt="">
+                <img onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/portfolio/dynamic.png') }}" alt="">
                </div>
                  
                 </div>
@@ -215,7 +215,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/portfolio/khojsansar.png') }}" alt="">
+                <img onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/portfolio/khojsansar.png') }}" alt="">
                </div>
                  
                 </div>
@@ -226,7 +226,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/portfolio/gunaso.png') }}" alt="">
+                <img onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/portfolio/gunaso.png') }}" alt="">
                </div>
                  
                 </div>
@@ -251,7 +251,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/portfolio/mudita.png') }}" alt="">
+                <img onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/portfolio/mudita.png') }}" alt="">
                </div>
                  
                 </div>
@@ -262,7 +262,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/portfolio/barbari.png') }}" alt="">
+                <img onclick="openImageModal(this.src)"  src="{{ url_for('static', filename='img/portfolio/barbari.png') }}" alt="">
                </div>
                  
                 </div>
@@ -273,7 +273,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/portfolio/furniture.png') }}" alt="">
+                <img onclick="openImageModal(this.src)"  src="{{ url_for('static', filename='img/portfolio/furniture.png') }}" alt="">
                </div>
                  
                 </div>
@@ -286,7 +286,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/portfolio/pencil.png') }}" alt="">
+                <img onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/portfolio/pencil.png') }}" alt="">
                </div>
                  
                 </div>
@@ -318,7 +318,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/certificates/datascience.png') }}" alt="">
+                <img  onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/certificates/datascience.png') }}" alt="">
                </div>
                  
                 </div>
@@ -329,7 +329,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/certificates/ai.png') }}" alt="">
+                <img onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/certificates/ai.png') }}" alt="">
                </div>
                  
                 </div>
@@ -340,7 +340,7 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/certificates/hubit.png') }}" alt="">
+                <img onclick="openImageModal(this.src)" src="{{ url_for('static', filename='img/certificates/hubit.png') }}" alt="">
                </div>
                  
                 </div>
@@ -351,13 +351,20 @@ border-solid border-gray-500 rounded-lg text-center relative">
                     <div class="portfolio-item border-2
 border-solid border-gray-500 rounded-lg text-center relative">
                <div class="img-block">
-                <img src="{{ url_for('static', filename='img/certificates/workshop.png') }}" alt="">
+                <img src="{{ url_for('static', filename='img/certificates/workshop.png') }}" alt=""  onclick="openImageModal(this.src)">
                </div>
                  
                 </div>
               
             </div>
            </div>
-                
+
         </section>
+
+
+<!-- Fullscreen Modal -->
+<div id="imageModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 hidden">
+  <img id="modalImage" class="max-w-full max-h-full rounded-lg shadow-lg" src="" alt="">
+</div>
+
 {% include 'footer.html' %}

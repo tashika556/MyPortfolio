@@ -79,4 +79,19 @@ $(".skills-slider").slick({
   ],
 });
 
- 
+
+  function openImageModal(src) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = src;
+    modal.classList.remove("hidden");
+  }
+
+  // Close modal when clicking outside the image
+  document.getElementById("imageModal").addEventListener("click", function (e) {
+    if (e.target === this) {
+      this.classList.add("hidden");
+      document.getElementById("modalImage").src = "";
+    }
+  });
+
